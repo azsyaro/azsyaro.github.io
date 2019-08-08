@@ -1,0 +1,184 @@
+/* tipografi */
+* {
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+}
+
+h1 > small {
+    font-weight: 100;
+}
+
+/* akhir tipografi */
+
+/* komponen */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+span.label {
+    background-color: #726BFA;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 20px 20px 20px 0;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-shadow: 2px 6px 6px rgba(221, 221, 221, 0.8);
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.shadow {
+    box-shadow: 6px 6px 6px rgba(221, 221, 221, 0.8);
+}
+
+.card.shadow {
+    border-radius: 20px;
+}
+
+.brand {
+    display: flex;
+    justify-content: start !important;
+}
+
+.brand > * {
+    margin-right: 20px;
+}
+/* akhir komponen */
+
+body {
+    margin: 0;
+    /* background-color: #fafafa; */
+}
+
+.container {
+    padding: 50px 200px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row > .kolom {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav > a {
+    padding: 10px 16px;
+}
+
+.card {
+    padding: 30px 50px;
+    background-color: rgba(244, 244, 244, 0.9);
+}
+
+
+
+/* background */
+#intro {
+    margin-bottom: 100px;
+    background: url('../assets/svgs/undraw_programmer_imem.svg') no-repeat center center;
+    background-size: contain;
+}
+
+#interest {
+    margin: 50px 0;
+    position: relative;
+}
+#interest > .bg {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 100px;
+    transform: scaleX(-1)
+}
+
+#pengalaman {
+    margin: 50px 0;
+}
+
+#keterampilan {
+    position: relative;
+    margin: 50px 0;
+}
+#keterampilan > .container > .back {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 30%;
+    left: 50%;
+}
+
+#keterampilan > .container > .back > .bg {
+    transform: translate(-50%);
+}
+
+footer {
+    background-color: #726BFA;
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        padding: 50px;
+    }
+    
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row > * {
+        flex-basis: 100%;
+    }
+
+    #intro > .container > .row {
+        flex-direction: column;
+    }
+
+    .row > img.bg {
+        width: 100%;
+    }
+
+    .ava > img {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .card {
+        padding: 20px 5px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .container {
+        padding: 50px;
+    }
+
+    #intro {
+        background-position: center bottom;
+    }
+
+    .ava > img {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    #interest > .bg {
+        width: 200px;
+        height: auto;
+    }
+}
