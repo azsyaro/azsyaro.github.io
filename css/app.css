@@ -120,16 +120,13 @@ nav > a {
     position: absolute;
     z-index: -1;
     top: 0;
-    width: 30%;
     left: 50%;
 }
 
 #keterampilan > .container > .back > .bg {
-    transform: translate(-50%);
-}
-
-footer {
-    background-color: #726BFA;
+    position: relative;
+    width: 600px;
+    transform: translateX(-50%);
 }
 
 @media all and (max-width: 600px) {
@@ -143,6 +140,10 @@ footer {
 
     .row > * {
         flex-basis: 100%;
+    }
+
+    .row > .kol2 {
+        flex-basis: 50%;
     }
 
     #intro > .container > .row {
@@ -160,6 +161,15 @@ footer {
 
     .card {
         padding: 20px 5px;
+    }
+
+    #keterampilan > .container > .back {
+        display: none;
+    }
+
+    #keterampilan {
+        background: url('../assets/svgs/undraw_voice_interface_eckp.svg') no-repeat bottom center;
+        background-size: contain;
     }
 }
 
@@ -180,5 +190,10 @@ footer {
     #interest > .bg {
         width: 200px;
         height: auto;
+    }
+    
+    #keterampilan > .container > .back > .bg {
+        width: 350px;
+        transform: translateX(-50%);
     }
 }
